@@ -117,7 +117,7 @@ The original code had several critical issues that prevented the simulation from
 | Stale piece offsets | **HIGH** | `piece_offset` never reset after moves — pick positions drifted |
 | Wrong hover Z | **HIGH** | Hover height calculated from piece origin, not board surface |
 | Premature capture animation | **HIGH** | Captured piece moved to graveyard before robot even started moving |
-| Windows Stockfish path | **HIGH** | Hardcoded Windows path prevented Linux execution |
+
 
 ---
 
