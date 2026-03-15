@@ -1,0 +1,4 @@
+=== New game ===
+
+01 W: a2->a3 src=RANDOM eval=-
+02 B: d7->d6 src=RANDOM eval=-
