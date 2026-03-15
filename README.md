@@ -4,7 +4,7 @@
 ## Modifications and Enhancements by Ishara Rajarathna
 
 **Project:** Digital Twin_niryobased (Webots Chess Robot Simulation)  
-**Original Authors:** Kostadin & Devran  
+**Original Authors:** Kostadin Devran  
 **Modified by:** Ishara Rajarathna  
 **Date:** March 2026  
 **Platform:** Webots R2025a, Python 3.10+, Stockfish 17
@@ -114,7 +114,6 @@ The original code had several critical issues that prevented the simulation from
 |-------|----------|-------------|
 | Duplicate ACK block | **CRITICAL** | A duplicate `if lift_msg` block with wrong keyword argument (`offset=` instead of `grasp_offset=`) caused `TypeError` crash after every first move |
 | `raise None` in IK | **CRITICAL** | `solve_ik()` raised `None` when all IK guesses failed, producing unhelpful `TypeError` |
-| No physics on pieces | **CRITICAL** | Chess piece protos had no `Physics` node — robot passed through pieces |
 | Stale piece offsets | **HIGH** | `piece_offset` never reset after moves — pick positions drifted |
 | Wrong hover Z | **HIGH** | Hover height calculated from piece origin, not board surface |
 | Premature capture animation | **HIGH** | Captured piece moved to graveyard before robot even started moving |
